@@ -1,0 +1,52 @@
+/* Header */
+
+.category{
+    display: flex;
+    text-align: center;
+    place-content: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.category-a {
+    transition: all 0.3s;
+}
+
+.category-a:hover {
+    color: #3232;
+}
+
+.search{
+    width: 100%;
+    border: 1px solid black;
+
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* paintings */
+
+.paintings{
+    display: flex;
+    text-align: center;
+    place-content: center;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.paintings-card {
+    transition: all 0.5s;
+    margin-bottom: 50px;
+}
+
+.paintings-card:hover{
+    transform: scale(1.1);
+}

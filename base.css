@@ -1,0 +1,26 @@
+html,
+body {
+    font-family: 'Lustria', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6875;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 90px;
+}
+
+.text-center{
+    text-align: center;
+}
