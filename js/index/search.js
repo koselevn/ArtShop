@@ -19,11 +19,13 @@ function Select6() {
         let result = ``
         data.paintings.map((el) => {
             const element = `
-                <div class="paintings-card">
-                    <img src="img/image01.png" alt="${el.p_name}">
-                    <p>${el.p_name}</p>
-                    <p>${el.autor_full_name}</p>
-                </div>`
+                    <a href="#popup" onClick="SelectPopup(${el.p_id})">
+                        <div class="paintings-card">
+                            <img src="img/image01.png" alt="${el.p_name}">
+                            <p>${el.p_name}</p>
+                            <p>${el.autor_full_name}</p>
+                        </div>
+                    </a>`
         result = result + element
     })
     div.innerHTML = result
@@ -61,11 +63,13 @@ function Search() {
             let result = ``
             data.paintings.map((el) => {
                 const element = `
-                    <div class="paintings-card">
-                        <img src="img/image01.png" alt="${el.p_name}">
-                        <p>${el.p_name}</p>
-                        <p>${el.autor_full_name}</p>
-                    </div>`
+                    <a href="#popup" onClick="SelectPopup(${el.p_id})">
+                        <div class="paintings-card">
+                            <img src="img/image01.png" alt="${el.p_name}">
+                            <p>${el.p_name}</p>
+                            <p>${el.autor_full_name}</p>
+                        </div>
+                    </a>`
             result = result + element
         })
         div.innerHTML = result

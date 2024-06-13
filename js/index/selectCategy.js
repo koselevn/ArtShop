@@ -51,11 +51,13 @@ function SelectOfCategory(CategoryName) {
         let result = ``
         data.paintings.map((el) => {
             const element = `
-                <div class="paintings-card">
-                    <img src="img/image01.png" alt="${el.p_name}">
-                    <p>${el.p_name}</p>
-                    <p>${el.autor_full_name}</p>
-                </div>`
+                    <a href="#popup" onClick="SelectPopup(${el.p_id})">
+                        <div class="paintings-card">
+                            <img src="${el.p_img_link}" alt="${el.p_name}">
+                            <p>${el.p_name}</p>
+                            <p>${el.autor_full_name}</p>
+                        </div>
+                    </a>`
         result = result + element
     })
     div.innerHTML = result

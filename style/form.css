@@ -1,0 +1,30 @@
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    border: #000 solid 1px;
+    transition: all 0.3s;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
